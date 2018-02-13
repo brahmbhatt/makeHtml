@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS bin</title>
+    <style>
+      .container{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .container2{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .container3{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      header {        
+        background-color: rgb(16, 3, 131);
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+      }
+      footer {
+        background-color:  rgb(16, 3, 131);
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+      }
+      nav {
+        display: flex;
+        background-color: rgb(31, 96, 122);
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        font-size: 30px;
+      }
+      section {
+        display: flex;
+        background-color: rgb(59, 167, 143);
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+      article {
+        display: flex;
+        background-color: rgb(6, 158, 100);
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+      aside {
+        display: flex;
+        background-color: rgb(141, 201, 106);
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+      @media only screen and (max-width:600px){
+        .container2{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        aside{
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header><strong>header</strong></header>
+        <nav><strong>nav</strong></nav>
+        <div class="container2">
+          <div class="container3">
+              <section><strong>section</strong></section>
+              <article><strong>article</strong></article>
+          </div>
+          <aside><strong>aside</strong></aside>
+        </div>
+        
+        <footer><strong>footer</strong></footer>
+    </div>
+  </body>
+</html>
