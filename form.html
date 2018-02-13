@@ -2,13 +2,24 @@
   <head>
     <meta charset="utf-8">
     <title>JS bin</title>
+    <style>
+      input[type="text"]{
+        border: 2px solid #000;
+      }
+      input[type="password"]{
+        border: 2px solid #000;
+      }
+      input[type="text"].Username{
+        border: 2px solid #F00;
+      }
+    </style>
   </head>
   <body>
     <form>
       <fieldset>
           <legend>Personal information:</legend>
           <label>Username:</label> 
-          <input type="text"><br>
+          <input type="text" class="Username"><br>
           <label>Password:</label> 
           <input type="password"><br><br>
           <label>Gender:</label> <br>
